@@ -15,6 +15,7 @@
         api.bitclout.com bitclout.com:*
         api.bitpop.dev
         bitclout.me:* api.bitclout.me:*
+        cloutfeedapp.com:* api.cloutfeedapp.com:*
         localhost:*
         explorer.bitclout.com:*
         https://blockchain.info/ticker
