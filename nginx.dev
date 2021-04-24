@@ -12,9 +12,9 @@ http {
 
     listen 80;
     listen 443 ssl;
-    ssl_certificate /etc/letsencrypt/live/cloutfeedapp.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/cloutfeedapp.com/privkey.pem;
-    include /etc/letsencrypt/options-ssl-nginx.conf;
+    #ssl_certificate /etc/letsencrypt/live/cloutfeedapp.com/fullchain.pem;
+    #ssl_certificate_key /etc/letsencrypt/live/cloutfeedapp.com/privkey.pem;
+    #include /etc/letsencrypt/options-ssl-nginx.conf;
   }
 
   server {
@@ -26,8 +26,8 @@ http {
 
     listen 80;
     listen 443 ssl;
-    ssl_certificate /etc/letsencrypt/live/cloutfeedapp.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/cloutfeedapp.com/privkey.pem;
-    include /etc/letsencrypt/options-ssl-nginx.conf;
+    #ssl_certificate /etc/letsencrypt/live/cloutfeedapp.com/fullchain.pem;
+    #ssl_certificate_key /etc/letsencrypt/live/cloutfeedapp.com/privkey.pem;
+    #include /etc/letsencrypt/options-ssl-nginx.conf;
   }
 }
