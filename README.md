@@ -6,7 +6,8 @@ Running your own BitClout node is as easy as 1-2-3:
     * On Mac and Windows, Docker comes with Docker Compose
     * On Linux you need to install Docker Engine and Docker Compose separately
 2. Execute `./run.sh`
-2. Visit http://bitclout.me. This domain is aliased to your local machine so it will
+    * Optionally, use `docker-compose up` arguments like `./run.sh -d` to run a daemon
+3. Visit http://bitclout.me. This domain is aliased to your local machine so it will
    allow you to interact with your local node.
 
 ## Check sync progress
@@ -36,8 +37,8 @@ data in real time! Below are some tips on how take full advantage of your node.
     peers.
 * Try to whitelist some posts in the Admin tab and see that they've made their way
   onto your global feed.
-* Read through the flags available in the [dev.env](https://github.com/bitclout/run/blob/main/dev.env) 
-  file. You can adjust these flags however you want, but note that we strongly 
+* Read through the flags available in the [dev.env](https://github.com/bitclout/run/blob/main/dev.env)
+  file. You can adjust these flags however you want, but note that we strongly
   recommend keeping your node in read-only mode for now. Turning read-only mode
   off could cause users who visit your node to make transactions that are not
   ultimately confirmed.
@@ -50,8 +51,8 @@ data in real time! Below are some tips on how take full advantage of your node.
     domain.com *and* api.domain.com.
   - If you do this, you must replace bitclout.me with your domain in nginx.dev so
     that your traffic is routed to core and frontend properly.
-  - If you do this, you *must* add your domain to the Caddyfile.dev's 
-    Content-Security-Policy or your site won't work. You will need to add two 
+  - If you do this, you *must* add your domain to the Caddyfile.dev's
+    Content-Security-Policy or your site won't work. You will need to add two
     entries: One for domain.com:\* and one for api.domain.com:\*
 * Set a PASSWORDS\_FILE if you want to restrict read access to your node.
 * Add an SSL\_CERT\_DIR and SSL\_DOMAIN using a letsencrypt cert in order to
@@ -59,3 +60,8 @@ data in real time! Below are some tips on how take full advantage of your node.
 * Set the TWILIO\* flags to allow new users to get some starter BitClout.
 * Set a SUPPORT\_EMAIL so your users can contact you if they run into trouble.
 * Play with the logging verbosity by increasing GLOG\_V.
+
+## Need help?
+The dev community is active on Discord and generally avaialble to answer any
+questions you might have, or any issues you run into. If you're having trouble, just
+message [the nodes-discussion channel](https://discord.com/channels/820740896181452841/835273317773869086/835273503284265002).
